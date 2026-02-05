@@ -153,7 +153,7 @@ const SuccessScreen = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                 >
                     You've made me the happiest person, darling!
                     <br />
-                    Can't wait to celebrate Valentine's Day with you! 🌹
+                    Can't wait to make endless memories with you! 💖
                 </motion.p>
 
                 <motion.div
