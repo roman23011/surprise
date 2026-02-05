@@ -44,8 +44,8 @@ const PhotoGallery = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
             <div
                 style={{
                     position: 'relative',
-                    width: '350px',
-                    height: '350px',
+                    width: 'min(350px, 80vw)',
+                    height: 'min(350px, 80vw)',
                     borderRadius: '50%',
                     overflow: 'hidden'
                 }}
