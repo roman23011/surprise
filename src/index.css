@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  
+
   --deep-burgundy: #8b1e3f;
   --wine-red: #a4133c;
   --dark-rose: #c9184a;
@@ -10,51 +10,51 @@
   --soft-coral: #ff758f;
   --blush: #ffb3c1;
 
-  
+
   --dark-purple: #2d1b2e;
   --deep-plum: #3e2247;
   --midnight-rose: #4a1942;
 
-  
+
   --white: #ffffff;
   --soft-white: #fef5f8;
   --cream: #fff0f3;
   --light-pink: #ffc9d6;
 
-  
+
   --gold-accent: #d4af37;
   --rose-gold: #e8b4b8;
 
-  
+
   --shadow-dark: rgba(0, 0, 0, 0.4);
   --shadow-pink: rgba(230, 57, 70, 0.3);
   --glow-pink: rgba(255, 77, 109, 0.5);
   --glow-bright: rgba(255, 117, 143, 0.6);
 
-  
+
   --gradient-bg: linear-gradient(135deg, #2d1b2e 0%, #4a1942 25%, #3e2247 50%, #2d1b2e 75%, #1a1a2e 100%);
   --gradient-text: linear-gradient(135deg, #ff758f, #ff4d6d, #e63946);
   --gradient-button: linear-gradient(135deg, #e63946 0%, #c9184a 50%, #a4133c 100%);
   --gradient-card: linear-gradient(135deg, rgba(62, 34, 71, 0.85) 0%, rgba(74, 25, 66, 0.9) 100%);
 
-  
+
   --font-heading: 'Playfair Display', serif;
   --font-body: 'Inter', sans-serif;
 
-  
+
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 3rem;
   --spacing-xl: 4rem;
 
-  
+
   --radius-sm: 12px;
   --radius-md: 20px;
   --radius-lg: 28px;
   --radius-full: 9999px;
 
-  
+
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -167,27 +167,7 @@ body::after {
   transform: translateZ(20px) rotateX(0deg) scale(1.02);
 }
 
-.glass-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(255, 117, 143, 0.6), transparent);
-  transform: translateZ(1px);
-}
 
-.glass-card::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.3), transparent);
-  transform: translateZ(1px);
-}
 
 
 .btn {
