@@ -102,32 +102,6 @@ const PhotoGallery = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                         />
                     </motion.div>
                 </AnimatePresence>
-
-                {[...Array(8)].map((_, i) => (
-                    <motion.div
-                        key={i}
-                        style={{
-                            position: 'absolute',
-                            width: '8px',
-                            height: '8px',
-                            borderRadius: '50%',
-                            background: 'radial-gradient(circle, rgba(255, 255, 255, 1), rgba(255, 117, 143, 0.5))',
-                            top: '50%',
-                            left: '50%',
-                            transform: `rotate(${i * 45}deg) translateX(195px)`
-                        }}
-                        animate={{
-                            scale: [0, 1, 0],
-                            opacity: [0, 1, 0]
-                        }}
-                        transition={{
-                            duration: 2,
-                            delay: i * 0.2,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                        }}
-                    />
-                ))}
             </div>
 
             <div
