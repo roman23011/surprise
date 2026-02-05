@@ -398,6 +398,25 @@ const SuccessScreen = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                         ))}
                     </div>
                 </motion.div>
+
+                <motion.p
+                    style={{
+                        fontSize: '1.2rem',
+                        color: 'var(--soft-coral)',
+                        fontStyle: 'italic',
+                        marginTop: '2rem',
+                        marginBottom: '1rem',
+                        maxWidth: '600px',
+                        lineHeight: 1.6,
+                        fontWeight: 500,
+                        textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)'
+                    }}
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 3.2 }}
+                >
+                    I don't want your voice loud… I want it shaky. 😉
+                </motion.p>
             </motion.div>
         </div>
     )
