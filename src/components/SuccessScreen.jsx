@@ -172,7 +172,7 @@ const SuccessScreen = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                         stiffness: 200
                     }}
                 >
-                    {['💝', '🌹', '💕', '✨', '💖'].map((emoji, index) => (
+                    {['💝', '🌹', '💕', '💗', '💖'].map((emoji, index) => (
                         <motion.span
                             key={index}
                             style={{
@@ -217,7 +217,7 @@ const SuccessScreen = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                     transition={{ delay: 1.8 }}
                 >
                     <span>My Beautiful Angel</span>
-                    <span style={{ fontSize: '1.5rem' }}>👼✨</span>
+                    <span style={{ fontSize: '1.5rem' }}>👼💫</span>
                 </motion.p>
 
                 <motion.div
@@ -310,9 +310,7 @@ const SuccessScreen = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                             ease: "easeInOut"
                         }}
                     >
-                        <span style={{ fontSize: '1.3rem' }}>🌟</span>
                         Our Adventure Bucket List
-                        <span style={{ fontSize: '1.3rem' }}>🌟</span>
                     </motion.h3>
 
                     <div style={{
@@ -324,13 +322,13 @@ const SuccessScreen = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                         scrollbarColor: 'rgba(255, 117, 143, 0.5) rgba(255, 255, 255, 0.1)'
                     }}>
                         {[
-                            { text: "Bungee jumping together", emoji: "🪂", delay: 2.4 },
-                            { text: "Drifting in a sports car", emoji: "🔥", delay: 2.5 },
-                            { text: "Foreign adventure trips", emoji: "🗺️", delay: 2.6 },
-                            { text: "Skinny dipping under stars", emoji: "🌊", delay: 2.7 },
-                            { text: "Late night drives", emoji: "🚗", delay: 2.8 },
-                            { text: "Cooking together", emoji: "🍝", delay: 2.9 },
-                            { text: "...and many more", emoji: "💖", delay: 3.0, isLast: true }
+                            { text: "Bungee jumping together", delay: 2.4 },
+                            { text: "Drifting in a sports car", delay: 2.5 },
+                            { text: "Foreign adventure trips", delay: 2.6 },
+                            { text: "Skinny dipping under stars", delay: 2.7 },
+                            { text: "Late night drives", delay: 2.8 },
+                            { text: "Cooking together", delay: 2.9 },
+                            { text: "...and many more", delay: 3.0, isLast: true }
                         ].map((item, index) => (
                             <motion.div
                                 key={index}
@@ -367,24 +365,6 @@ const SuccessScreen = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                                 }}
                                 whileTap={{ scale: 0.95 }}
                             >
-                                <motion.span
-                                    style={{
-                                        fontSize: item.isLast ? '2.5rem' : '2rem',
-                                        display: 'block'
-                                    }}
-                                    animate={{
-                                        rotate: item.isLast ? [0, 0, 0] : [0, 10, -10, 0],
-                                        scale: item.isLast ? [1, 1.1, 1] : [1, 1, 1]
-                                    }}
-                                    transition={{
-                                        duration: 2,
-                                        delay: item.delay,
-                                        repeat: Infinity,
-                                        ease: "easeInOut"
-                                    }}
-                                >
-                                    {item.emoji}
-                                </motion.span>
                                 <span style={{
                                     fontSize: item.isLast ? '1rem' : '0.95rem',
                                     fontWeight: item.isLast ? 700 : 600,
