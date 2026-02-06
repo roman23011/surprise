@@ -22,12 +22,12 @@ const BackgroundSlideshow = ({ currentIndex }) => {
                 height: '100vh',
                 zIndex: -1,
                 overflow: 'hidden',
-                background: 'var(--gradient-bg)', 
+                background: 'var(--gradient-bg)',
                 backgroundSize: '200% 200%',
                 animation: 'gradientShift 20s ease infinite'
             }}
         >
-            <AnimatePresence mode="wait">
+            <AnimatePresence>
                 <motion.div
                     key={currentIndex}
                     style={{
@@ -40,17 +40,17 @@ const BackgroundSlideshow = ({ currentIndex }) => {
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',
-                        mixBlendMode: 'overlay', 
-                        opacity: 0.4 
+                        mixBlendMode: 'overlay',
+                        opacity: 0.4
                     }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 0.4 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 2.5, ease: "easeInOut" }}
                 />
             </AnimatePresence>
 
-            {}
+
             <div
                 style={{
                     position: 'absolute',
