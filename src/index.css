@@ -391,3 +391,25 @@ html {
   background: var(--rich-pink);
   color: var(--white);
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-full);
+  margin-block: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 117, 143, 0.5);
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 117, 143, 0.8);
+}
