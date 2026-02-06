@@ -47,7 +47,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
     }
 
     const messages = [
-        { text: "Afia, Will You Be My Valentine?", emoji: "" },
+        { text: "Afia, Will You Be My Valentine?", emoji: "❤️" },
         { text: "Heyy Darling?", emoji: "😉" },
         { text: "Are you sure, Afia?", emoji: "❤️" },
         { text: "Really sure?" },
@@ -79,26 +79,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
                 transition={{ duration: 0.6, delay: 0.2 }}
             >
                 { }
-                <motion.div
-                    style={{
-                        fontSize: '5rem',
-                        transformStyle: 'preserve-3d',
-                        filter: 'drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3))'
-                    }}
-                    animate={{
-                        scale: [1, 1.1, 1],
-                        rotate: [0, 3, -3, 0],
-                        rotateY: [0, 10, -10, 0],
-                        translateZ: [0, 20, 0]
-                    }}
-                    transition={{
-                        duration: 2.5,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                    }}
-                >
-                    ❤️
-                </motion.div>
+
 
                 { }
                 <motion.h1
