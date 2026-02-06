@@ -47,7 +47,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
     }
 
     const messages = [
-        { text: "Afia, Will You Be My Valentine?", emoji: "❤️" },
+        { text: "Afia, Will You Be My Valentine?", emoji: "" },
         { text: "Heyy Darling?", emoji: "😉" },
         { text: "Are you sure, Afia?", emoji: "❤️" },
         { text: "Really sure?" },
@@ -140,7 +140,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
                 { }
                 <motion.p
                     style={{
-                        fontSize: '1.2rem',
+                        fontSize: '1.5rem',
                         color: 'var(--light-pink)',
                         marginBottom: '2rem',
                         display: 'flex',
