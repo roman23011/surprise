@@ -24,10 +24,7 @@ function App() {
 
 
 
-    // We only want to start when the user explicitly clicks the start screen
     useEffect(() => {
-        // Just ensure audio is ready/loaded if needed, but don't auto-play
-        // or setMusicStarted(true) automatically.
     }, [])
 
 

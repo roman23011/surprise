@@ -392,7 +392,6 @@ html {
   color: var(--white);
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
