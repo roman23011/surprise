@@ -50,7 +50,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
         { text: "Afia, Will You Be My Valentine?", emoji: "💖" },
         { text: "Heyy Darling?", emoji: "😉" },
         { text: "Are you sure, Afia?", emoji: "💕" },
-        { text: "Really sure?", emoji: "🌹" },
+        { text: "Really sure?" },
         { text: "Think about it, Afia!", emoji: "💗" },
         { text: "You know you want to!", emoji: "💝" },
         { text: "Just say yes, Afia!", emoji: "❤️" },
