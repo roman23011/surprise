@@ -217,7 +217,7 @@ const SuccessScreen = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                     transition={{ delay: 1.8 }}
                 >
                     <span>My Beautiful Angel</span>
-                    <span style={{ fontSize: '1.5rem' }}>👼💫</span>
+                    <span style={{ fontSize: '1.5rem' }}>👼</span>
                 </motion.p>
 
                 <motion.div
