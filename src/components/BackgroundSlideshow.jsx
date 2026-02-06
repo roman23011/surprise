@@ -46,7 +46,7 @@ const BackgroundSlideshow = ({ currentIndex }) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 0.4 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 2.5, ease: "easeInOut" }}
+                    transition={{ duration: 3.5, ease: "easeInOut" }}
                 />
             </AnimatePresence>
 
