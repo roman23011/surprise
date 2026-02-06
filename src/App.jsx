@@ -13,16 +13,16 @@ function App() {
     const [musicStarted, setMusicStarted] = useState(false)
     const audioRef = useRef(null)
 
-    
+
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentPhotoIndex((prev) => (prev + 1) % 8) 
+            setCurrentPhotoIndex((prev) => (prev + 1) % 8)
         }, 4000)
 
         return () => clearInterval(interval)
     }, [])
 
-    
+
     useEffect(() => {
         const startMusic = async () => {
             if (!audioRef.current) return
@@ -33,15 +33,15 @@ function App() {
                 await audioRef.current.play()
                 setMusicStarted(true)
             } catch (err) {
-                
+
                 console.log('Autoplay blocked, waiting for interaction')
             }
         }
 
-        
+
         startMusic()
 
-        
+
         const tryPlay = async () => {
             if (musicStarted || !audioRef.current) return
 
@@ -55,7 +55,7 @@ function App() {
             }
         }
 
-        
+
         const events = ['click', 'touchstart', 'keydown', 'mousemove', 'mouseenter', 'pointerenter', 'pointermove']
         events.forEach(event => {
             document.addEventListener(event, tryPlay, { once: true, passive: true })
@@ -68,7 +68,7 @@ function App() {
         }
     }, [])
 
-    
+
     useEffect(() => {
         if (musicStarted && audioRef.current && audioRef.current.paused) {
             audioRef.current.play().catch(console.log)
@@ -81,12 +81,12 @@ function App() {
 
     return (
         <>
-            {}
+            { }
             <audio ref={audioRef} loop preload="auto">
                 <source src="/music/faasle.mp3" type="audio/mpeg" />
             </audio>
 
-            {}
+            { }
             {!musicStarted && (
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -133,14 +133,14 @@ function App() {
                             textAlign: 'center'
                         }}
                     >
-                        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}></div>
+                        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>❤️</div>
                         <div style={{
                             fontSize: '1.5rem',
                             color: 'white',
                             fontWeight: 600,
                             textShadow: '0 2px 10px rgba(0,0,0,0.5)'
                         }}>
-                            Click anywhere to start
+                            Something special for my favourite person
                         </div>
                     </motion.div>
                 </motion.div>
