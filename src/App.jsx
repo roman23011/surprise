@@ -23,49 +23,11 @@ function App() {
     }, [])
 
 
+
+    // We only want to start when the user explicitly clicks the start screen
     useEffect(() => {
-        const startMusic = async () => {
-            if (!audioRef.current) return
-
-            try {
-                audioRef.current.muted = false
-                audioRef.current.volume = 0.4
-                await audioRef.current.play()
-                setMusicStarted(true)
-            } catch (err) {
-
-                console.log('Autoplay blocked, waiting for interaction')
-            }
-        }
-
-
-        startMusic()
-
-
-        const tryPlay = async () => {
-            if (musicStarted || !audioRef.current) return
-
-            try {
-                audioRef.current.muted = false
-                audioRef.current.volume = 0.4
-                await audioRef.current.play()
-                setMusicStarted(true)
-            } catch (err) {
-                console.log('Play failed:', err)
-            }
-        }
-
-
-        const events = ['click', 'touchstart', 'keydown', 'mousemove', 'mouseenter', 'pointerenter', 'pointermove']
-        events.forEach(event => {
-            document.addEventListener(event, tryPlay, { once: true, passive: true })
-        })
-
-        return () => {
-            events.forEach(event => {
-                document.removeEventListener(event, tryPlay)
-            })
-        }
+        // Just ensure audio is ready/loaded if needed, but don't auto-play
+        // or setMusicStarted(true) automatically.
     }, [])
 
 
