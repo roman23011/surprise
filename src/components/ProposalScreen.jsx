@@ -7,7 +7,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
     const [noAttempts, setNoAttempts] = useState(0)
     const containerRef = useRef(null)
 
-    
+
     useEffect(() => {
         if (audioRef?.current) {
             audioRef.current.muted = false
@@ -23,9 +23,9 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
     const moveNoButton = () => {
         if (!containerRef.current) return
 
-        
-        const maxX = 150  
-        const maxY = 80   
+
+        const maxX = 150
+        const maxY = 80
 
         const newX = (Math.random() - 0.5) * maxX
         const newY = (Math.random() - 0.5) * maxY
@@ -33,7 +33,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
         setNoButtonPosition({ x: newX, y: newY })
         setNoAttempts(prev => prev + 1)
 
-        
+
         setYesButtonScale(prev => Math.min(prev + 0.15, 2.5))
     }
 
@@ -47,14 +47,14 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
     }
 
     const messages = [
-        { text: "Afia, Will You Be My Valentine?", emoji: "💖" },
+        { text: "Afia, Will You Be My Valentine?", emoji: "❤️" },
         { text: "Heyy Darling?", emoji: "😉" },
-        { text: "Are you sure, Afia?", emoji: "💕" },
+        { text: "Are you sure, Afia?", emoji: "❤️" },
         { text: "Really sure?" },
-        { text: "Think about it, Afia!", emoji: "💗" },
-        { text: "You know you want to!", emoji: "💝" },
+        { text: "Think about it, Afia!", emoji: "❤️" },
+        { text: "You know you want to!", emoji: "❤️" },
         { text: "Just say yes, Afia!", emoji: "❤️" },
-        { text: "Come on, Afia!", emoji: "💓" }
+        { text: "Come on, Afia!", emoji: "❤️" }
     ]
 
     const currentMessage = messages[Math.min(noAttempts, messages.length - 1)]
@@ -78,7 +78,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
             >
-                {}
+                { }
                 <motion.div
                     style={{
                         fontSize: '5rem',
@@ -97,10 +97,10 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
                         ease: "easeInOut"
                     }}
                 >
-                    💝
+                    ❤️
                 </motion.div>
 
-                {}
+                { }
                 <motion.h1
                     style={{
                         fontFamily: 'var(--font-heading)',
@@ -137,7 +137,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
                     </span>
                 </motion.h1>
 
-                {}
+                { }
                 <motion.p
                     style={{
                         fontSize: '1.2rem',
@@ -156,7 +156,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
                     <span style={{ fontSize: '1.4rem' }}>😊</span>
                 </motion.p>
 
-                {}
+                { }
                 <div style={{
                     position: 'relative',
                     display: 'flex',
@@ -167,7 +167,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
                     width: '100%',
                     padding: '2rem'
                 }}>
-                    {}
+                    { }
                     <motion.button
                         className="btn btn-yes"
                         onClick={onAccept}
@@ -190,11 +190,11 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
                     >
                         <span style={{ position: 'relative', zIndex: 1, display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
                             <span>Yes!</span>
-                            <span style={{ fontSize: '1.2em' }}>💕</span>
+                            <span style={{ fontSize: '1.2em' }}>❤️</span>
                         </span>
                     </motion.button>
 
-                    {}
+                    { }
                     <motion.button
                         className="btn btn-no"
                         onMouseEnter={handleNoHover}
@@ -224,7 +224,7 @@ const ProposalScreen = ({ onAccept, audioRef }) => {
                     </motion.button>
                 </div>
 
-                {}
+                { }
                 {noAttempts > 2 && (
                     <motion.p
                         initial={{ opacity: 0, y: 10 }}

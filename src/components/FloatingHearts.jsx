@@ -21,8 +21,8 @@ const FloatingHearts = () => {
             overflow: 'hidden'
         }}>
             {Array.from({ length: numberOfParticles }).map((_, index) => {
-                const isHeart = Math.random() < 0.3
-                const hearts = ['❤️', '💖', '💗', '💕']
+                const isHeart = Math.random() < 0.2
+                const hearts = ['❤️']
                 const randomHeart = hearts[Math.floor(Math.random() * hearts.length)]
 
                 const randomColor = colors[Math.floor(Math.random() * colors.length)]
