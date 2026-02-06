@@ -10,7 +10,7 @@ const FloatingHearts = () => {
             'rgba(255, 215, 0, 0.2)',
             'rgba(255, 255, 255, 0.3)'
         ]
-        const totalParticles = 15
+        const totalParticles = 25
         const heartCount = 3
 
         const baseArray = Array(totalParticles).fill(null).map((_, i) => ({
