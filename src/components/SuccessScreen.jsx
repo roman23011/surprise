@@ -97,27 +97,8 @@ const SuccessScreen = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                             textShadow: 'none'
                         }}
                     >
-                        Yay!
+                        Yayyy!!
                     </span>
-                    <motion.span
-                        style={{
-                            fontSize: 'clamp(3rem, 6vw, 5rem)',
-                            display: 'inline-block',
-                            transformStyle: 'preserve-3d',
-                            filter: 'drop-shadow(0 5px 15px rgba(255, 215, 0, 0.6))'
-                        }}
-                        animate={{
-                            scale: [1, 1.08, 1],
-                            rotate: [0, 5, -5, 0]
-                        }}
-                        transition={{
-                            duration: 2,
-                            repeat: Infinity,
-                            ease: "easeInOut"
-                        }}
-                    >
-                        🎉
-                    </motion.span>
                 </motion.h1>
 
                 <motion.p
@@ -153,50 +134,10 @@ const SuccessScreen = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                 >
                     You've made me the happiest person, darling!
                     <br />
-                    Can't wait to make endless memories with you! 💖
+                    Can't wait to make endless memories with you!
                 </motion.p>
 
-                <motion.div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        gap: '0.5rem',
-                        fontSize: '2rem',
-                        transformStyle: 'preserve-3d'
-                    }}
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{
-                        delay: 1,
-                        type: "spring",
-                        stiffness: 200
-                    }}
-                >
-                    {['💝', '🌹', '💕', '💗', '💖'].map((emoji, index) => (
-                        <motion.span
-                            key={index}
-                            style={{
-                                display: 'inline-block',
-                                transformStyle: 'preserve-3d',
-                                filter: 'drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3))'
-                            }}
-                            animate={{
-                                y: [0, -10, 0],
-                                rotate: [0, 5, -5, 0],
-                                rotateY: [0, 20, -20, 0],
-                                translateZ: [0, 15, 0]
-                            }}
-                            transition={{
-                                duration: 2.5,
-                                delay: index * 0.1,
-                                repeat: Infinity,
-                                ease: "easeInOut"
-                            }}
-                        >
-                            {emoji}
-                        </motion.span>
-                    ))}
-                </motion.div>
+
 
                 <PhotoGallery currentPhotoIndex={currentPhotoIndex} setCurrentPhotoIndex={setCurrentPhotoIndex} />
 
@@ -398,7 +339,7 @@ const SuccessScreen = ({ currentPhotoIndex, setCurrentPhotoIndex }) => {
                     I don't want your voice loud… I want it shaky. 😉
                 </motion.p>
             </motion.div>
-        </div>
+        </div >
     )
 }
 
