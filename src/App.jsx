@@ -133,7 +133,7 @@ function App() {
                             textAlign: 'center'
                         }}
                     >
-                        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>❤️</div>
+                        <div style={{ fontSize: '3rem', marginBottom: '1rem' }}></div>
                         <div style={{
                             fontSize: '1.5rem',
                             color: 'white',
